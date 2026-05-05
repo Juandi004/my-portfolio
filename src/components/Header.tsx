@@ -12,11 +12,11 @@ const Header = () => {
         <a href="#services" className="text-sm text-gray-300 hover:text-cyan-400 tracking-widest font-bold">SERVICES</a>
         <a href="#about-me" className="text-sm text-gray-300 hover:text-cyan-400 tracking-widest font-bold">ABOUT</a>
         <a href="#proyects" className="text-sm text-gray-300 hover:text-cyan-400 tracking-widest font-bold">PROJECTS</a>
-        <a href="#contact" className="text-sm text-gray-300 hover:text-cyan-400 tracking-widest font-bold">CONTACT</a>
+        <a href="#contacts" className="text-sm text-gray-300 hover:text-cyan-400 tracking-widest font-bold">CONTACT</a>
       </nav>
 
       {/* Resume */}
-      <a href="/resume.pdf" className="border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black px-5 py-2 text-sm font-bold tracking-widest transition-colors">
+      <a href="/Juan_Gutierrez_CV.pdf" target="_blank" rel="noopener noreferrer" className="border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black px-5 py-2 text-sm font-bold tracking-widest transition-colors">
         RESUME
       </a>
 
