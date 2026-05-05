@@ -2,9 +2,9 @@ const Header = () => {
   return (
     <header className="flex flex-row items-center justify-between px-10 py-4 bg-gray-950 border-b border-cyan-900 sticky top-0 z-50">
       
-      {/* Logo */}
+      {/* Logo/Name */}
       <a href="#" className="text-cyan-400 font-black text-2xl tracking-widest">
-        DEV/CORE
+        <img src="https://cdn-icons-png.freepik.com/512/5906/5906160.png" alt="logo" className="size-10" />
       </a>
 
       {/* NavBar */}
