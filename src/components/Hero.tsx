@@ -5,7 +5,7 @@ const Hero = () => {
                 <img
                     src="https://img.freepik.com/free-vector/matrix-style-binary-code-digital-falling-numbers-blue-background_1017-37387.jpg?semt=ais_hybrid&w=740&q=80"
                     alt="background"
-                    className="absolute w-full h-full object-cover z-0 blur-sm"
+                    className="absolute w-full h-full object-cover z-0 blur-sm mask-b-from-10%"
                 />
                 <div className="absolute inset-0 bg-black/40 z-5" />
                 
