@@ -1,4 +1,4 @@
-import { Phone, Computer, ChevronsLeftRightEllipsis } from "@lucide/astro"
+import { Phone, Computer, ChevronsLeftRightEllipsis } from "lucide-react"
 
 interface ServiceProps {
     name: string,
@@ -6,19 +6,37 @@ interface ServiceProps {
     icon: React.ReactNode
 }
 
-const Service: ServiceProps[]=[
+const services: ServiceProps[] = [
     {
         name: 'Frontend Development',
-        description: 'aaaaaaaaaaaaaa ',
-        icon: <Computer/>
+        description: 'Fast and reactive user interfaces using modern frameworks like React & Astro.',
+        icon: <Computer className="text-cyan-400" size={52} />
+    }, 
+    {
+        name: "Backend Developer",
+        description: "Basic Knowlegde on Backend development.",
+        icon: <ChevronsLeftRightEllipsis className="text-cyan-400" size={52} />
+    },
+    {
+        name: "Mobile Solutions",
+        description: "Mobile Apps developer multi-platform that offers a fast & pleacefully experience.",
+        icon: <Phone className="text-cyan-400" size={52} />
     }
 ]
 
-const Services=()=>{
-
-    return(
+const Services = () => {
+    return (
         <>
-        
+        <h1 className="text-5xl mt-10 mb-5 px-10 ">Services & Knowledge</h1>
+        <section id="services" className="relative h-100 grid grid-cols-1 md:grid-cols-3 gap-6 px-10 py-5">
+            {services.map((s, i) => (
+                <div key={i} className="border border-cyan-900 bg-gray-950/90 p-6 hover:border-cyan-400 transition-colors">
+                    <div className="mb-4">{s.icon}</div>
+                    <h3 className="text-white font-bold text-4xl mt-10">{s.name}</h3>
+                    <p className="text-gray-400 text-xl mt-5">{s.description}</p>
+                </div>
+            ))}
+        </section>
         </>
     )
 }
