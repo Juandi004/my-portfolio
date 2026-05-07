@@ -19,7 +19,7 @@ const Cards: ProjectProps[] = [
         name: "GITAF",
         description: "AAAAAAAAAAA.",
        
-        photo: "/ani.jpg",
+        photo: "/gitaf.png",
         tags: ["React Native", "IoT"]
     },
 ];
@@ -41,7 +41,7 @@ const Projects = () => {
               <img 
                 src={project.photo} 
                 alt={project.name}
-                className="w-full h-full object-cover group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105"
+                className="w-full h-full bg-white object-contain group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105"
               />
             </div>
 
