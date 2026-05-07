@@ -14,12 +14,12 @@ const services: ServiceProps[] = [
     }, 
     {
         name: "Backend Developer",
-        description: "Basic Knowlegde on Backend development.",
+        description: "Basic Knowlegde in NestJS.",
         icon: <ChevronsLeftRightEllipsis className="text-cyan-400" size={52} />
     },
     {
         name: "Mobile Solutions",
-        description: "Mobile Apps developer multi-platform that offers a fast & pleacefully experience.",
+        description: "Mobile Apps developer multi-platform that offers a fast & pleacefully experience usng React Native.",
         icon: <Phone className="text-cyan-400" size={52} />
     }
 ]
@@ -30,7 +30,7 @@ const Services = () => {
         <h1 className="text-5xl mt-10 mb-5 px-10 font-bold">Services & Knowledge</h1>
         <section id="services" className="relative h-100 grid grid-cols-1 md:grid-cols-3 gap-6 px-10 py-5">
             {services.map((s, i) => (
-                <div key={i} className="border-2 border-gray-700 bg-gray-900 p-6 hover:border-cyan-400 transition-colors rounded-2xl">
+                <div key={i} className="border-2 border-gray-700 bg-gray-900 p-6 hover:border-cyan-400 rounded-2xl hover:scale-105 transition duration-300">
                     <div className="m-3">{s.icon}</div>
                     <h3 className="text-white font-bold text-4xl mt-10">{s.name}</h3>
                     <p className="text-gray-400 text-xl mt-5">{s.description}</p>
